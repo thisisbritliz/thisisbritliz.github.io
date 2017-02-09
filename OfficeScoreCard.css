@@ -1,0 +1,20 @@
+section {
+	font-family: 'Capriola', sans-serif;
+}
+
+#PageTitle {
+	font-size: 32pt;
+	font-kerning: 5pt;
+	color: #196b3e;
+}
+
+#PageSubTitle {
+	font-size: 24pt;
+	font-kerning: 5pt;
+	color: #196b3e;
+}
+
+#body {
+	font-size: 16pt;
+	color:#2e2d30;
+}
