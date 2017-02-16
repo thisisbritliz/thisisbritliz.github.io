@@ -18,3 +18,86 @@ section {
 	font-size: 16pt;
 	color:#2e2d30;
 }
+@media (max-width: 5000px){
+
+	nav li {
+		display:block;
+	}
+
+	nav{
+		display:block;
+	}
+
+	#OfficeOnTimeOverdue {
+		padding-top: 75px;
+	}
+	#UnitOverview{
+		padding-top: 75px;
+		padding-bottom: 500px;
+	}
+	#OfficeStats {
+		padding-top: 0px;
+		padding-bottom: 50px;
+	}
+	#menu-button{
+		display: block;
+	}
+}
+
+body{
+	background-color:#ffffff;
+	/*margin-top:100px;*/
+	font-family: 'Indie Flower', cursive;
+}
+
+nav li {
+	display:inline;
+	padding:20px;
+}
+
+nav ul{
+	padding: 0px;
+	}
+
+nav {
+	background-color:#94143d;
+	padding:20px;
+	position:fixed;
+	width:100%;
+	top: 0px;
+	left:0px;
+	width:100%;
+	text-align:center;
+}
+
+a {
+	color: pink;
+	text-decoration:none;
+}
+
+a:hover {
+	color:black;
+}
+
+.current {
+	background-color:purple;
+}
+
+#resume {
+	min-height: 1000px;
+}
+
+#home {
+	padding-top:50px;
+}
+
+#menu-button {
+	position: fixed;
+	z-index: 1;
+	display: none;
+	padding-top: 0px;
+}
+
+#PageTitle {
+	padding-top: 75px;
+}

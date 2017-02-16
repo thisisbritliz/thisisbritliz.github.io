@@ -2,16 +2,104 @@
 <html>
 <head>
 	<title>OBPP Office Scorecard</title>
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Capriola">
-	<link rel="stylesheet" type="text/css" href="OfficeScoreCard.css">
+		<link rel="stylesheet" href="OfficeScoreCard.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Capriola">
+			<script   src="http://code.jquery.com/jquery-2.2.4.js"   integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="   crossorigin="anonymous"></script>
+
+	
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['Task', 'Hours per Day'],
+          ['On Time',     11],
+          ['Overdue',      2],
+        ]);
+// is there a way to get the "On Time" Array to show a green color instead of the default blue
+// configure the arrays to make them active to jump down to another section of the page
+        var options = {
+          title: 'Overdue v. On Time Tasks'
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+        chart.draw(data, options);
+      }
+    </script>
 </head>
 <body>
+	<button id= menu-button>&#9776;</button>
+	<!--way to do a multi-step button?-->
+			<nav>
+				<ul id="nav">
+					<li class="current">
+						<a href="#OfficeOnTimeOverdue">Office Ontime/Overdue</a>
+					</li>
+					<li class="current">
+						<a href="#UnitOverview">High Level Unit Overview</a>
+					</li>
+					<li class="current">
+						<a href="#OfficeStats">Office Statistics</a>
+					</li>
+				</ul>
+			</nav>
 	<p>
 		<section id="PageTitle">OBPP Tasking Tracker</section>
 		<section id="PageSubTitle">Office Scorecard</section>
 	<br>
+		<!---would like to put this into sections. would a table work for this idea?-->
 		<section id="body">Welcome to the OBPP Office Scorecard application! <br></section>
 	</p>
+	<br>
+	<section id=OfficeOnTimeOverdue></section>
+		<h1>Office Ontime/Overdue</h1>
+			<div id="piechart" style="width: 900px; height: 500px;"></div>
+				<p>3 wolf moon af aute cupidatat cray, leggings locavore dolor organic delectus distillery taxidermy adipisicing. Qui godard kombucha, aliquip roof party sustainable asymmetrical occaecat swag enamel pin before they sold out messenger bag est meggings etsy. Hashtag crucifix fashion axe vice, blue bottle man braid taxidermy tempor man bun live-edge unicorn irure magna flannel. Anim aesthetic chambray woke cred heirloom, pork belly cupidatat shoreditch proident. Raw denim marfa leggings fanny pack, proident live-edge sriracha eiusmod scenester ennui readymade art party fingerstache eu skateboard. Health goth green juice microdosing sed. Dolore succulents gluten-free banh mi eiusmod pug.</p>
+
+	<section id=UnitOverview></section>
+		<h1>High Level Unit Overview</h1>
+			
+				<p>3 wolf moon af aute cupidatat cray, leggings locavore dolor organic delectus distillery taxidermy adipisicing. Qui godard kombucha, aliquip roof party sustainable asymmetrical occaecat swag enamel pin before they sold out messenger bag est meggings etsy. Hashtag crucifix fashion axe vice, blue bottle man braid taxidermy tempor man bun live-edge unicorn irure magna flannel. Anim aesthetic chambray woke cred heirloom, pork belly cupidatat shoreditch proident. Raw denim marfa leggings fanny pack, proident live-edge sriracha eiusmod scenester ennui readymade art party fingerstache eu skateboard. Health goth green juice microdosing sed. Dolore succulents gluten-free banh mi eiusmod pug.</p>
+				<p>3 wolf moon af aute cupidatat cray, leggings locavore dolor organic delectus distillery taxidermy adipisicing. Qui godard kombucha, aliquip roof party sustainable asymmetrical occaecat swag enamel pin before they sold out messenger bag est meggings etsy. Hashtag crucifix fashion axe vice, blue bottle man braid taxidermy tempor man bun live-edge unicorn irure magna flannel. Anim aesthetic chambray woke cred heirloom, pork belly cupidatat shoreditch proident. Raw denim marfa leggings fanny pack, proident live-edge sriracha eiusmod scenester ennui readymade art party fingerstache eu skateboard. Health goth green juice microdosing sed. Dolore succulents gluten-free banh mi eiusmod pug.</p>
+				<p>3 wolf moon af aute cupidatat cray, leggings locavore dolor organic delectus distillery taxidermy adipisicing. Qui godard kombucha, aliquip roof party sustainable asymmetrical occaecat swag enamel pin before they sold out messenger bag est meggings etsy. Hashtag crucifix fashion axe vice, blue bottle man braid taxidermy tempor man bun live-edge unicorn irure magna flannel. Anim aesthetic chambray woke cred heirloom, pork belly cupidatat shoreditch proident. Raw denim marfa leggings fanny pack, proident live-edge sriracha eiusmod scenester ennui readymade art party fingerstache eu skateboard. Health goth green juice microdosing sed. Dolore succulents gluten-free banh mi eiusmod pug.</p>
+				<p>3 wolf moon af aute cupidatat cray, leggings locavore dolor organic delectus distillery taxidermy adipisicing. Qui godard kombucha, aliquip roof party sustainable asymmetrical occaecat swag enamel pin before they sold out messenger bag est meggings etsy. Hashtag crucifix fashion axe vice, blue bottle man braid taxidermy tempor man bun live-edge unicorn irure magna flannel. Anim aesthetic chambray woke cred heirloom, pork belly cupidatat shoreditch proident. Raw denim marfa leggings fanny pack, proident live-edge sriracha eiusmod scenester ennui readymade art party fingerstache eu skateboard. Health goth green juice microdosing sed. Dolore succulents gluten-free banh mi eiusmod pug.</p>
+
+		
+	<section id=OfficeStats></section>
+		<h1>Office Statistics</h1>
+				<p>3 wolf moon af aute cupidatat cray, leggings locavore dolor organic delectus distillery taxidermy adipisicing. Qui godard kombucha, aliquip roof party sustainable asymmetrical occaecat swag enamel pin before they sold out messenger bag est meggings etsy. Hashtag crucifix fashion axe vice, blue bottle man braid taxidermy tempor man bun live-edge unicorn irure magna flannel. Anim aesthetic chambray woke cred heirloom, pork belly cupidatat shoreditch proident. Raw denim marfa leggings fanny pack, proident live-edge sriracha eiusmod scenester ennui readymade art party fingerstache eu skateboard. Health goth green juice microdosing sed. Dolore succulents gluten-free banh mi eiusmod pug.</p>
+				<p>3 wolf moon af aute cupidatat cray, leggings locavore dolor organic delectus distillery taxidermy adipisicing. Qui godard kombucha, aliquip roof party sustainable asymmetrical occaecat swag enamel pin before they sold out messenger bag est meggings etsy. Hashtag crucifix fashion axe vice, blue bottle man braid taxidermy tempor man bun live-edge unicorn irure magna flannel. Anim aesthetic chambray woke cred heirloom, pork belly cupidatat shoreditch proident. Raw denim marfa leggings fanny pack, proident live-edge sriracha eiusmod scenester ennui readymade art party fingerstache eu skateboard. Health goth green juice microdosing sed. Dolore succulents gluten-free banh mi eiusmod pug.</p>
+				<p>3 wolf moon af aute cupidatat cray, leggings locavore dolor organic delectus distillery taxidermy adipisicing. Qui godard kombucha, aliquip roof party sustainable asymmetrical occaecat swag enamel pin before they sold out messenger bag est meggings etsy. Hashtag crucifix fashion axe vice, blue bottle man braid taxidermy tempor man bun live-edge unicorn irure magna flannel. Anim aesthetic chambray woke cred heirloom, pork belly cupidatat shoreditch proident. Raw denim marfa leggings fanny pack, proident live-edge sriracha eiusmod scenester ennui readymade art party fingerstache eu skateboard. Health goth green juice microdosing sed. Dolore succulents gluten-free banh mi eiusmod pug.</p>
+				<p>3 wolf moon af aute cupidatat cray, leggings locavore dolor organic delectus distillery taxidermy adipisicing. Qui godard kombucha, aliquip roof party sustainable asymmetrical occaecat swag enamel pin before they sold out messenger bag est meggings etsy. Hashtag crucifix fashion axe vice, blue bottle man braid taxidermy tempor man bun live-edge unicorn irure magna flannel. Anim aesthetic chambray woke cred heirloom, pork belly cupidatat shoreditch proident. Raw denim marfa leggings fanny pack, proident live-edge sriracha eiusmod scenester ennui readymade art party fingerstache eu skateboard. Health goth green juice microdosing sed. Dolore succulents gluten-free banh mi eiusmod pug.</p>
+
+<script> 
+		$('nav').onePageNav({
+    scrollThreshold: 0.1,
+});
+
+	function toggleMenu(){
+		//do the toggling
+		$('nav').slideToggle();
+	}		
+		$('#menu-button').click(toggleMenu);
+		
+		//at mobile window size, remove style attribute from nav that got added by the slide Toggle
+			$(window).resize(function(){
+			var width = $(window).width()
+
+				if (width>768){
+					$('nav').removeAttr('style');
+					}
+			});
+
+
+		</script>
+
 
 </body>
 </html>
+
